@@ -1,0 +1,103 @@
+
+
+
+div.main-container {
+    display: flex;
+	flex-direction: column;
+	width: 1300px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #F68280;
+	padding: 0 0 10px;
+	overflow: hidden;
+	transition: 0.2s;
+	border-radius: 30px;
+	margin-top: 70px;
+
+    .sub-container {
+        width: 90%;
+
+       .todo-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
+            align-items: center;
+            background-color: silver;
+            
+            .todo-item-container {
+                display: flex;
+                width: 70%;
+
+               .todo-item__label {
+                   width: 90%;
+                   margin-left: 15px;
+                   font-size: 20px;
+               }
+            }
+
+            .todo-item-buttons-container {
+                
+                input {
+                    margin: 0 5px;
+                }
+            }
+        }
+
+        .add-input-container {
+            transition: 0.2s;
+	        display: flex;
+	        justify-content: center;
+            align-items: center;
+            height: 50px;
+
+            input {
+                margin: 0 50px;
+            }
+
+            .add-todo-item__input {
+                width: 40%;
+	            background-color: #C06C84;
+	            border: 1px solid #355C7D;
+	            color: #355C7D;
+	            font-size: 20px;
+	            font-family: sans-serif;
+	            padding: 3px;
+            }
+
+            .add-todo-item__button {
+                background-color: transparent;
+                border: 1px solid #355C7D;
+                color: #355C7D;
+                font-family: sans-serif;
+                padding: 5px 10px;
+                transition: 0.2s;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #C06C84;
+                }
+            }
+            .clear-all {
+                background-color: transparent;
+                border: 1px solid #355C7D;
+                color: #355C7D;
+                font-family: sans-serif;
+                padding: 5px 10px;
+                transition: 0.2s;
+
+                &:hover {
+                    cursor: pointer;
+	                background-color: #C06C84;
+                }
+            }
+
+
+        }
+    }
+}
+
+.mark-as-imp {
+    color: #355C7D;
+    font-size: 18px;
+}

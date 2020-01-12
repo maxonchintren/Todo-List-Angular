@@ -1,0 +1,27 @@
+<!-- Template for Each Task -->
+<li [className] = 'isChecked()'>
+    <div class ='todo-item-container'>
+      <input class = 'complete-task' type='checkbox' (click) = 'check()' *ngIf = 'checkboxVis'>
+      <label *ngIf = 'labelVis' class = 'todo-item__label'>{{task}}</label>
+      <input class = 'edit-input' type = 'text' *ngIf = 'editInputVis' [value]='task' maxlength='65'>
+    </div>
+    <div class = todo-item-buttons-container>
+        <!-- Edit Button -->
+        <input type ="button" 
+        class = 'edit__button' 
+        [value]='editButtonIcon'
+        (click) = 'edit()' 
+        *ngIf = 'editButtonVis'>
+        <!-- Save Button -->
+        <input type="button" 
+        class = 'save__button' 
+        [value]='saveButtonIcon' 
+        (click) = 'save()'
+        *ngIf = 'saveButtonVis'>
+        <!-- Delete Button -->
+        <input type="button" 
+        class = 'delete__button' 
+        [value]='deleteButtonIcon' 
+        (click) = 'delete($event)'>
+    </div>
+  </li>
