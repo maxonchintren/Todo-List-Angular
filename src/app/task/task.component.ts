@@ -28,16 +28,11 @@ export class TaskComponent implements OnInit {
   public unChecked = 'todo-item';
   public checked = 'todo-item-checked';
 
-  isChecked() {
-    const checkbox = <HTMLInputElement>document.querySelector('.complete-task');
-    if (checkbox.checked) {
-      return this.checked;
-    }
-    return this.unChecked;
-  }
-
+ 
   check() { 
     this.editButtonVis= !this.editButtonVis;
+    this.task.isChecked = !this.task.isChecked;
+    this.task.isImportant = !this.task.isImportant;
   }
 // _________________
 
@@ -73,6 +68,6 @@ export class TaskComponent implements OnInit {
     this.saveButtonVis = false;
     this.checkboxVis = !this.checkboxVis;
 
-    this.task = edittedTask.value;
+    this.task.value = edittedTask.value;
   }
 }

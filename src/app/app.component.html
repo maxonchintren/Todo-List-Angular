@@ -13,6 +13,8 @@
         <app-task *ngFor ='let task of tasks' [task]='task'  (deleteTasks)='deleteTask(task)'></app-task>
       </ul>
       <div class='add-input-container'>
+        <input type = 'checkbox' class='important-check' id='important-check'>
+        <label for = 'important-check'>Пометить как важное</label>
         <input type = 'text' class = 'add-todo-item__input' (keydown.enter) = 'addTodoItem()' placeholder = 'Введите Задание!' maxlength='65'> 
         <input type = 'button' class = 'add-todo-item__button' value = 'Добавить' (click) = 'addTodoItem()'>
         <input type = 'button' class = 'clear-all' value = 'Очистить всё' (click) = 'deleteAll()'>

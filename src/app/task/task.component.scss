@@ -134,3 +134,21 @@
 	color: gray;
     
 }
+
+.todo-item-important {
+    color: #355C7D;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 90%;
+    margin: 8px auto;
+    transition: 0.5s;
+    background-color: #F68200;
+	border-radius: 20px;
+}
