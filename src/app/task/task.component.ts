@@ -24,6 +24,7 @@ export class TaskComponent implements OnInit {
   public editButtonIcon = String.fromCharCode(9998);
   public saveButtonIcon = String.fromCharCode(10003);
   public deleteButtonIcon = String.fromCharCode(10007);
+  
 // Some stuff for task classes
   public unChecked = 'todo-item';
   public checked = 'todo-item-checked';
